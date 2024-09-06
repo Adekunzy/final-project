@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="./logo/logo.png" alt="">
+        
+        <input type="text" placeholder="Search...">
+        
+        <div class="nav">
+            <ul>
+                <div class="close-nav">
+                    <img src="./assets/icons/icon-menu-close.svg" alt="">
+                </div>
+                <li><a href="./Home-Page.html">Home-page</a></li>
+                <li class="select">Orders</li>
+                <li><a href="./About-Us.html">About us</a></li>
+                <li><a href="./Contact-Us.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-alt">
+            <img src="./assets/icons/icon-menu.svg" alt="">
+        </div>
+       
+    </div>
+
+    <div class="orders-upper">
+        <img src="./assets/images/plate-with-delicious-kebab-wraps-with-copy-space_23-2148632670.jpg" alt="">
+        <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABJNJREFUSEvFV39sU1UU/s597WZcXKAsEiUxI0FAown/zEw0WdfXzYwIiropGojxF+yNIQZJNMZQF0QCBgVsu8kfRkOMbMEfIYqsvW+NjGCYRoMaNKJgxKlxzBkynN3ePeZ2r0nX9dfEhPvnvd853znnnXP6lXCZDl0mXsyIuLm72Rg5P1KroKpZ8TU6aEFikAWf8fl8J3paepxSEymJuKGz4XpW/CyDVwKYlcf5eQDvAXhJWvLHYgEUJF7etfzKUWd0O4EsAEYxZ+57koh2zp4zu6OnpSeZzyYvsT/qrxYsDhHopgyHB6HwMYFOjmP8NJLweMu81Q6cJQCaiOgeAB4XfwJerJCPy99zkeckDoaDNzBxPwCfa3TYIcdKtCbOFsraH/YvEEJ0EpPp4n5xJpzaxIbEuWy7acTmPnMuxvE5gHkaTEwvxNvioRLLDDAoGA3uYPDTrs0pY9So6d3cO5rpYxpxIBw4QEQtLmiLtGRHNqn/Ff8szxUeXV5MjE18mXgqMZKNMaPmq2A8mbon7JatcmNe4uDe4M1s8EkX8KG05J25Mg1Gg35m7kv5JKqPt8YT2Tg9esNDw58AWApgXDiiOtYeG0zjpmRsRsw3AawBMCocsTATmOm4FGKNr4/ULxIQX7sNt01a8rlpxM3dzWXDQ8NDAK5icNS2bD1COU+pxNrYjJh6tu8GcFZacv404obXGkwlVFw/MHiZbdmH/w/iQCTwGIH2aV9CiIWxdbHvJz+7ewLhwMNE9EYK4Ih5+cqs32eScUO4YYki9UUqIeYVdpt9aApxMBLczOAd+tJX5SsvtHUyiRn8iG3ZqYBzHT0BRrnxZ+qNsVG2yd1TiM2ouQmMl/XlWPlY5bFHj13I56yxq3Gx4zi6+716okjRffH18Q9y4Zv2NFUmPcm/3LdN0pK7sku9ioje1pcKanGf1fddPmJ9X99Zv0woocn0ipxg8IO2Zfdk25id5o1Q+MbN+AHZJg9kl7qWwcdTAMIq2SrfKUTsfut7mblbt4WLXSkt+X6mXSAaWE1Mb6V6R4ia2LrYZ1OI9aozo+YfAOYA2C8tuboYsX43w+b9IOhKnYMXt2T/KJgRUwfWDOA32SqvBYGnEk/OXBeAJwD8bbCxqLet9+dSyIPh4Boy6Hh6VNI27gLRvVDG4L22ZW9Iv03ZXC7wVKrYjJi05B3pCEsJIBPjrky9Sm/XbWM4xoLe9t4zOYnd0u0H4aHJ7uettmU/P1NSjQ9EAnsI1O7avi4tuTbTz7RfJ3+Xv8pwjAEA1S6wQ1pyS6nkoVBIHJ17dFf6l4mZv01Scmm/1T85y+7JKQS0xlJKfZopBFhxq73e/qlQAFpAKFJRAtW5uEGHnNtyCYiZSJ9/iOhdZv5ICfWV94L39MWKi2Vlqmw+GVQDhlYdWvqktdmAx/DcdWTtkV9zBVtQ7DXubKxQFWorg3U3pme1WNW1wNvuq/K9+J/EXqZ3d0U+A0DL28o8zFreHmTF24p9kmlzXCwVf8jvMa42bgXhukxB7yjnh7qhuoFQKKSK+SjYXKUaXwqupH8Sl0KQz/ZfwPvnLqB4zp8AAAAASUVORK5CYII="/> 40-60mins</span>
+        <div class="rate">
+            <div class="ratings">
+                <h1>Dishables  </h1>
+            <p>5.0  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAg1JREFUSEvFlrtLHUEUhz8hEIvEwiIGH6WiXSq7aBQFhUAQVKwCChJIZ7TxPxDMw04QTUgKISakEB+NhZhY2Ak2GtKE+CABC1GUgJDsD+bCMu7u7Mz1MbDsvbPnzHfmzJlzTgk3NEpuiEsx4E5j9HKI8aHgh8CaAer3N194KHgJKOx4EXh8HeA6YCcG+gc0WHNOO0J2/B54aq38Dhhw0mICvuBK4Cdwy4KcA1XAn7xwX/BLYDhl8TFg9CrAd4E9QO+kcQxUAGd54PaOHwD1xm1yq9ynd7V533Ys+hfYB34BB8ZQGatHAblZ0I+De6Po/JjH2iJkeoDP0o+DO4CgLJTTEF27ZuCrDdb/PmDWMijnupliOoJuYCHJ1YW5y4Yr6JTl1uOmpV2ny4IfAi3Alu2PrHtcLFyR3Qr8SDoEVwIJhQvWZK5U4uG7wEqNOqNSzwh7A7zI0nGBG6PA2PCESnzbVKxUVRdYVr8KAEulBthN03WBvwBdgeDnUe6eDAX/Bu6lKJ+Y+Tsp3+eBJyHgWuB7iuJqrBn4ADxKkDsFyqNSqax1YWS5Wh3FjKWhCB+JKtWUNf8MGE8ome3Aii/4bdRt9MeUtICMUWJIGgom6bTFPr5OaxyydjwHqIwdRc8QoL4qz5CxE0AZ8AlQufVy9f2ogA+aXaiQ+ww1DvLOtGkMvMA+IG9Z1z32XjCvwn8R3FIfWJsPkAAAAABJRU5ErkJggg=="/></p>
+            </div>
+
+            <div class="delivery">
+                <ul>
+                    <li>Deliver now</li>
+                    <li>Pickup</li>
+                </ul>
+
+            </div>
+
+            
+        </div>
+        
+    </div>
+    <hr>
+    <div >
+        <h3>Deliverable within</h3>
+
+        <div class="time-order">
+        <p>09:00am - 09:00pm</p>
+        <p>MinOrder:N0</p>
+        </div>
+
+    </div>
+
+    <div class="choose">
+        <ul>
+            <li>ALL</li>
+            <li>SALAD</li>
+            <li>SNACK</li>
+            <li>LOCAL DISH</li>
+            <li>ITALIAN</li>
+            <li>CHINESE</li>
+            <li>INDIAN</li>
+            <li>SMOOTIE</li>
+            <li>GRILLS</li>
+        </ul>
+    </div>
+    <hr>
+
+    <section class="menu">
+        <div class="offer">
+            <img src="./assets/images/azerbaijani-lyulya-kebab-with-potatoes-vegetables_140725-908.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="offer">
+            <img src="./assets/images/caesar-salad_74190-5603.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/chicken-grill-with-vegetables-table_140725-9460.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/close-up-chicken-mandi-rice-dish_1106454-146622.jpg" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/crispy-fried-chicken-plate-with-salad-carrot_1150-20212.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/flat-lay-burger-fries-plate_23-2148238470.jpg" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/crispy-french-fries-with-ketchup-mayonnaise_1150-26588.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/indian-delicious-roti-assortment_23-2149073331.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/noodles-with-pork-pork-balls-chilli-paste-with-soup-thai-style-vegetable-boat-noodles-selective-focus_1150-45665.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/kebab-platter-with-lamb-chicken-lula-tikka-kebabs-grilled-vegetables-with-red-onion-salad_141793-2250.jpg" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/stir-fried-crab-with-curry-powder-beautiful-side-dishes_1150-24292.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/strawberry-milkshake-black-background_1268-25081.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/top-view-delicious-pasta-plate_23-2150690621.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/indian-appetizers-with-spicy-chutney_1106454-141380.jpg" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/curry-with-chicken-onions-indian-food-asian-cuisine_2829-4415.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/tropical-smoothie-with-papaya-banana_501050-373.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/potatoes-wooden-box-with-green-pods_960396-894534.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/nigerian-egusi-melon-soup-with-garri-eba-lunch_539365-1075.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/delicious-nigerian-jollof-rice-served-with-crispy-fried-plantains-plate_941468-2787.jpg" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/french-fires-with-delicious-hamburger_23-2148374853.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/yellow-orange-juice-glass-jar-with-mint-leaves_114579-3155.jpg" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/sizzling-chicken-lo-mein-with-fresh-vegetables_1219093-17798.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/asian-food-restaurant_7939-1964.jpg" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/fried-rice-with-minced-pork-tomato-carrot-cucumber-plate_1150-27177.jpg" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/side-view-meat-kebab-with-grilled-potatoes-vegetables-with-sauce-fire-board_141793-5006.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/healthy-chickpea-salad-with-tomatolettuce-cucumber-black-slate-background_123827-33349.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/fresh-vegetable-salad-including-sliced-cucumbers-red-tomatoes-onion-other-things-inside-white-plate-wooden-rustic-surface_140725-14179.jpg" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/view-delicious-shawarma-dish_23-2151805493.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/delicious-pasta-plate_23-2150690639.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/iced-macha-green-tea-latte_74190-5834.jpg" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/pasta-spaghetti-with-tomato-sauce-cheese-served-plate_1220-6910.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/close-up-fried-banana_23-2151006046.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/udon-noodles-with-chicken-peppers-japanese-cuisine_2829-11268.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/pre-prepared-food-showcasing-ready-eat-delicious-meals-go_23-2151246059.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/indian-delicious-roti-assortment_23-2149073331.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/realistic-plastic-water-bottle-packaging-set-with-isolated-images-branded-transparent-bottles-different-size-vector-illustration_1284-69181.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/front-view-delicious-fruity-pie-with-jelly-light-background-biscuit-cookie-bake-nut-pie-cake-dessert-color-tea-free-space_140725-144926.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/apple-lemon-juice_74190-622.jpg" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/high-angle-waffle-arrangement_23-2148531599.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div><div class="offer">
+            <img src="./assets/images/hawaiian-pizza_1203-2455.avif" alt="">
+            <p>food</p>
+            <p>.category</p>
+            <p>Nxxx</p>
+            <p>save N500 on potato cost. Offer expires in 2 days</p>
+            <button>Add to cart</button>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="flex">
+        <ul>
+            <li><img src="./logo/logo.png" alt=""></li>
+            <li>Dishables: well recognised for its track record of satisfying costomers craving</li>
+        </ul>
+
+        <ul>
+            <li>Quick links</li>
+            <li><a href="./About-Us.html">About us</a></li>
+            <li><a href="FAQ's">FAQ's</a></li>
+            <li><a href="./Contact-Us.html">Contact us</a></li>
+        </ul>
+
+        <ul>
+            <li>Legal</li>
+            <li><a href="Terms and Condition">Terms and Condition</a></li>
+            <li><a href="Privacy Policy">Privacy Policy</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="./Contact-Us.html"></a>Contact us</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA+tJREFUSEvFll2IG1UUx//nTmZp60fBh6X49VS1qyDSFSlWdKG2D7UPfm2VWkofSt2dbCtp87GZSWVkd/IxaZulyaRWwQdXQbeo4IvoQ6m0D1prRQqtiwVREERU/FgaTDpzdKYJTpLJJk2Fnbe593/+v7n3nHvuEJbooSXi4rrBRmJiGzFLDuH7FdWBL/YVCpVeFnP94Hj4NID1dZgD0BlmzKTypXcX+4CO4HQsrDIhAnBJM8uvdDIxmsF+2WmS8KSasX4Nim0D6/rOZQOXV7zJoNH/AvhlzSxPBRkcjkSWLwzUVoeY1zLjGRCeACDq2nmu2RtShVd/bI1tAuej0RuqonICwENtQuIxNVc+1i1/mUlltc3CIuZNde3FWlV+WJ+Z+d0f2wROxybWM7Gbs6CHmem5VL503D9pxJSdBLrdJuf4AfPovDvHAGXi4YMM7PO0hA+0nPV0R/B0IvwoMT5dZFW2YN6czJc/aWiM+MRJgB+rv38shKMls0e/dN+NRPh9MJ7y5hjDWt4614hrWrERHb8fQnzdZTsrJNFaNVP6xjNvBnsIhliXMotnpiNjt5EsffevTGZgNmVaOwLB2cTulTbLTbkIrEiimJorHXTn3OKqhKpDIIwD2FXXn9NMa9j7sJgyC6LtAH5RTWuQvEy4u9/yGPHwDwDu6LRqBn91pSKN6MXin22xCWUGTC95xra4Tz1UvOA2GDC/7Y5JJB6YzBW9HQ0Cuwd/awfw2VpV3thaoQ3tVFwZEqALdeMdqmnNppMTa9jmi1dzQFsbxdkGno4rLxDorTYw4fMQVzYmzDf+6rQb3rbLtY+uVjKXtZw15x9jhtURXM/zzwAG/ACHpbsP5I9826Xwep4ObJlGPOw2it1+FybsT+Wswz07dxEGgtP799zLknPe1/pcmz9k5jXxfPmnIE89OjYYEtI2STinGud4MXbHS8LwVajv7J2v1gZG9ELhN7+pHoncIstVt+MNAbBB2K7lrHf6Auu6cqN8mdwWeGuLwbwQvCWZLV9yx+v9/SSAB5t0jBe1vPVaJ/ii93FmcnzYccQpAMtbDBwwXheSnbU5dMx3ITTJiDip5srZIHjXH4F0LLyFCR8GnfleCo1AJdUs7WnVdgW7AUYi/DwYswBCvcACNIc004r6x3sCuwGZmLLJIZoDsLIP+IJqWjc3+rTXX67FxIwpq64QjjT/nfTiQCnNLBl9rdgfNJ1QHiEWeYDXdcUS3tNy1rN95biT+VRs712SsB93GJsJ2NBe/fTZTRUa2Vss/v2/gv1mc6Oj0qU7V91jyzzYGLeXOWd1vbzQ13HqupV9Cq6puPpkBIYtGfgfK4VwLrYUTo4AAAAASUVORK5CYII="/> 08135782005</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAnNJREFUSEvtlstrE1EUxr8zTSLoQkGyEPHxD4i4keLGje58gAgi1IUuqunEEinJNDOhudVMnoVKk2nFhSAWRBDBx04X7iy4cCEuRRHERXWhoMXmcdo7mbSJpE2ajM2md3cf5/ud+91zZy6hR416xMUWeNOcb7A6qQ1dZaZRAAddzuAzGLeMnHWvprsCToYDx5mU1y4DG+QUhY9G09Nv5WAdWNWZYFZX0ri7CXDcViWO6pnpdAPYjAQFUF0AoktGpjDrBtzUggNgflDbkJEtiLXBcoYxU9zhDwkhFjtJQAjh8/6evw1CYDWexluDbTa/Q7FyOjZ55+tG4Ikb1/bCqzwn0JHGuFZg5lkQDThBPwBcNLLWy3bgZkQ9CeAhgN32+gatpuCh+HKt2f4bWYsSEXWYgAkAXgAVYsSjOcskaUSTxgClwqrBBFmYyrJMEUwjRq6QNyOqE9MGWGonIoF+gvIMgN+pylcKSudHM3d/1rPT2uDOCjyPmemEU0TfGOVzsezMnOy3AK9WtdxxTdjUB/eg5HsCcL8z9qVMdGosU3gv+ze14KE+5hcA9jvQOeqjM3oqP7+isf6Om4NlsBDC4/vzfZLBQUfsL4iuOGcov0bbnCsytbjdPyKEKNU70tGO6wUS4eAFIr5fA9XNLTDT5Viu8KjZ+XcNlqJp7frhMleeAjjgQD6WCWfHMtaHtareFbBtfSi0y+MrTslqLy0owyKf/7XeVXMN3M59dvWMNwrsuqo7BbYFTob//28RgG5krZRz9ap5bcZDgCo4pk9YbxrANlxTA8yIAtjXrb3/xH8CI9H06eMyqKXc1ru6pUVuLeiZ1UvcSjIug0L1KwAAAABJRU5ErkJggg=="/> adekunzy10@gmail.com</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAkpJREFUSEvt1j9oE3EUB/DvuyYqBVEEFRxUUMFBcJEOIlRwcRBxsHVRWiyIJleckjR3Lf7EXtK7TNLcFUXFog62giAOLoIFcRAHBxdRQR0ELYgihGqTe5rmj/l/fxIpQm/83Xvv87vf/X7vjrBMFy2TC9+wFpNPMts8alh3/EzeF5xHwXxrCSQ6perp215xz3AyEjpsEz0E0FXEchLzkXjKeuQF9wSPR4d7CPYcgDU1yAJD6h01Jp+7xV3DlyLDOySyXwBY36T4N5ulfWOpyXducFewppzfjGw2/zRbHYp+RCDQoyYuf3bCHWE9enptFt3PAN7jVKxwn14FkNkfM278aBXfEhZCrApm5h8DOOAOLUc9XezeeEgI8atZXlNYCCEFM/P3ARz1iJbCHyiGeYwAbpTfFB6Phq4RaMgnWkhjmGrKlF3DiUhYYYLWFvo3WVENM1lbq+6Jq7pSh+RG3a0KbtCVOkXXdbcynIjLuznHLwGs7pRWU+enDXvvmDH1eunQlW4mYuFzzLD+EVo44cRnFd26UgXP9PV1vdm+aQhEW4pbchDAtjYn8gGgm4Udzp92vf9yvX92NlcF1wJaVH4CcG97MM2pRvqg6+OUD1yBS8vFwDRLxfdWHCSbBwkYqF/Sji41XVSNtKhEtKgs/uyeCysw8H8tdfgugP66rwohpOjmVOV4i643oxrmCU/nODkS2smM48xS+Y+SwV8DtDg9ol/9XllsInZmXZaDAwTaUBonsheIcC8+Yb31BLfXsZyzHX/2nEv4i/gNXeP4H1vtOJ4AAAAASUVORK5CYII="/> 5, Oni Crescent, Unity-Estate, Iju Ishaga, Lagos state</li>
+        </ul>
+       
+    </div>
+        <hr>
+        <div class="buttom">
+            <div class="copyright">
+                <p> Copyright 2024 made with Ayoade Adekunle</p>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://www.facebook.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA4RJREFUSEvFll1oFFcUx/9ndjVBom1E2IgPJrTSGEUzSQoS3MmQB/XRVtI+tEKLD6LNOoko0r6YJ1usX7MxD30ogtASElsoVcyDKekkodo02VHpilisHxANKkmwH4ns3KOzzZad3ZnM7OYh92nm3nP+v3PmnjvnEhZp0CJxURC4paUndOfxxBYQVwK8ei7ocbB0f11F5Gpv73tW0EQCgWsVfR0YnxLhHQCve4hPgvBd2BKfjwy13/ULYF5wff1Xy8SymS9A2A8g5Cc2t54CcGL26eTRZLLjhZePJ1huPrsWlrgE5g0BgblmI7CknYnh2Libvyu4Tjm9niENAVhZJDTjNo5wqDHxU+v9XJ088NtqV0XKSl0FYW0A6ASYDAb/KRH+FUCYgF0AqrN8k9LS0sbRK3uns/XywLIS7wb4fV8ooZtJ7DMH2qeybeUmPQZGPHuOgS7T0Fo9wfVqZ7UQ4pYvFEi+GVm9ye341Cq6RsCZHI0XEovK0cH2R5l5R8ZyVD8Pwm4/MIF2jRkHvs+2q1VPVwKoJEt6F4RYrgYzjpuD2pE8cE1Nx9KSVeVPAKzwA1sWV98YbrudsZMV/QL+21vPwcBd09DeyAPXKZ3NDNHvB7XX/7FmVtwePvLcfp4LeDaIX3bA/3/q2mj8IyI+F0RgVgovTw588lcarHaVlYhUOgi/wYyd5qD2g22XDT5MxMf9nO31osFAm2louhOs6IcI+NIDfC9haFVBgpKj8R4Qt7jb8qGE0XbSAZab9N1gnF8ouE7RbzKw0U2HgQ9MQ/vWAa5T41tY8C8eDo6K9Mrcbpt/TDz6G0CJmw0JNIwNaaMOsKp2hKdF+eSrzlLm4jRFQHpv7DHzdPJYpvPYVV26qvwze54Zy0E46BHYVMI4sBIgdoDtlyDnsdjiIuCbMUP7MBOU88+ldjZAiBG/IiqmqoVlbbw+fPB3V3A666h+GYQd88ELBhMuJH7WHJXu3hZFKgmg3AteIPgxS2J9bhdzvQjI0XgTiPsAlLrBg4IJeM6S1JwYiP2Wq+N59alXz2wVAhcBei3XKSD4CUtimznQbroerfn2cnPzqTVSKtQDoDHbLgD4xyVLQh//2t/6zEs/wPWWSVb0KCDtAXg7gIg7mB4So49YfD061HbN72QEADslNimdVW9FIg8yt4/032p8IuJ1m1xAxn6xF7decMbFYfK9XgJG0YIuUceEtwAAAABJRU5ErkJggg=="/></a></li>
+                    <li><a href="https://www.instagram.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGdJREFUSEvNll1sFFUUx//ndrtNQBJgZ7GUYncWaHcGsVLqC02xUd+oKSEmmhhRSfDBt1ajCVFiJUQTJfbFxAexiokJD4hByosmRCTBSD8IsDtbLDNtLDWys63BQiLt3mNvYXF2d3a39aVMMk/33PM759zzRViij5aIiwcbnKjT1rKgjYK5olSEJFGGJI+YY+4f5SJZ1ON4JFxNxB8RsBPAqnKK8s6nGOiDxFvFjPAFJ6LaTmIcA7D8nsJbDAwRkCltAAUBbgJQdU9umomeN+3U6fx7BeD+mpply6vuXANQDeZeQfis3kkPlIfeVX2mDYG1jtYKgW4GWgFM3PonuKl5YuK2F14AtqJaNxgHCDgWc9wXFhliDOuhlwBQg5M+aunaGQBtIHQbtvteOfA4GOtmIaq3ODf+XAxYQSXo6PwdplcF0ZCEvAjCdcN2a4uCVUIJYpWRScNxDT/ocG1oXSaIDmLazgCD+DwydEIl0bAe2iNBX6l7RLQ3Zqd6LV37G8BDojIYbrg64WZ15oQ6Uac1kcAAA+dMx1Xvk/NZEe01ED4GsCLv6CYRdcbs1BdWJPwKCdAs5JVH7fQFS9dUvkRZZLaY16au+ILjerhVgM8C6DMct92rfM7yN+YsV9CbIPSQ5EGQqAT4MQY6lVfM6DRH3Z7ce6FLAG2BlNuNscnz/h5HQ88Q0w8gOmHYqd1ZoXhdeKsQfAGAK2Z4W8N4+rpXeTy66hHBgUGAV8gK2bR5ZDKePbd07SKARkHU2mCnzpUGg48bTvq5rFBS195n4F0mdJm2+4nf2yciobeJ6EMCvRNzUoc84EEAWyVox2Yn9bN/qKOhpwXTj/keW7r2PYB2JrSbttvnB7aiod1gOo48o62oNgBGExhtxqj7ky/Yimiq5lTtnTIc99msUELXviOgQ/0xxz25KLCuqSdqJomnYmOu0j3/5WS1B3zScNyO++GKaAdUEwDwpuG4h33Beng/wIdAvN+w0x947vaDsI1BT5pOSiVuSXCOx5c3rF4fkCIJ4LaY4cfzkyuhr6wjBIYABFiiwTsYFpRcyQ1rWlhKlXkF5ZSIhl4npk/nvJ5mcI9g9INEUEI2EkiV0zIG9pmO+3lOOUW1OBgmEZ6I2W6/f3LdLZvBog1E1/bNNQ8V6oIGwqAu00kdyX+GbAMhiMaYc+OSL/i3jatrZzPidwBjhuNG/N5yvmVWYtdcvbcwqTHJv0DSt35zlwGR1DU1laoCFXL9ppHJcV8wAxVJXftrvgtJ1Cxkk/Az7n79R7VmZqisno457krvaC0Yi4lI6Ihq8GB8Y4y6L5ZSXO4sqWtn52cyc68xmt7rlS8AD9fXaHLmzlW17hDjtIQ8aIxO/kqALAdS59lFgAUOAmgBMCUqg/XeyVRQx//VXuhlEH3pAf3f1QcM3mM66a/zjS667CX08A6AuwhQHUwsxFuPjIrOKQYd9jaNkqHOB1zW1zwcYOm7FBQzZpaEVW57ebAX+kWGeUHiS+bxv6pa3C6kTLPRAAAAAElFTkSuQmCC"/></a></li>
+                    <li><a href="https://www.linkedin.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhtJREFUSEvt1s9r1EAUB/Dvi1GqoNS6S0EQqrK4ybpZf4B6qKUKnjx6EwTBQ0URelAURBQPInrQg6h/gOBNL15ERbE3wbKZJZtFV71YL8nWqotEtslrU6nMbG0Vm1ChnVveS+aTN3mThLBAgxbIxf8FZ4vuUSbKAtEzX5jDaazKjIozVm0I4N5pjImONOz8vaRxBc6U3AEw7qoIub7Im+nClntxErjUhjR9YaxOFc5azl6G9rINue8L43CqcDx5puQcB2vnAKwH80MK+ZhXLTRTh5MGZpsv0X28puB0LV+GHGPFyKjIfZyrCAXutmobQ/B7+QIC3fZE/uTUY7Dc0wCuy/lxLVirRyv7AI4bc4eU+8bA41YYDXx1CqPtNzFvmECDDL45a3WEeitq7fpSsT6rBUlH/1IxgABAxx+W9bwnjCtJw/F8EYB3AD4B6ANmfAOGfWHsTBoOwOj1K8brqT7Y5vYjwhMAugRFnd/1VfV67sd0bP7PmHDLs41TcjWZovsIhINKhWGU85xCPTGYCYcatvFAga3aDYAH5RiTtrthb3mVHMx8oFExnypwqXoBTJeVhtOwzy8bL34PF99sCimMm0QafMcX5omf+7h2BuBrSppov2/nn8uxdcXqWSK6ugQvLfWvHuhedM3V0/Oho9kZ7FHfqTzilc23caxra2WDpuub5fw4gvJYefuYHPub8xL9EZjrC9WeW3zwBLX/Yy4rXp6TAAAAAElFTkSuQmCC"/></a></li>
+                    <li><a href="https://www.x.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAs5JREFUSEvtlk1IFGEYx//P7JoltuV+qFRbWoQ7ujt70AjsAzWKEDpEEh2EJOgQWAQGHaQOHQqCiIqka5eyLzxFdOnzIJEedrd1tzSiqCx31pBiM92Zp8ZUdm3cmd2FvDgwzOF9nv/vef7zzvMOYYEuWiAuFsH/zfm8rS6pfbvCMjnRxUA9AW4A40x8sdCaOPe5vy6hdVLqDZVpz5FXvq8znaWBV9X2FU1MFl+T7cOH8KQxadS+w/96NbH6HEClTuwnADcBeJlgiwfELakxaeBSKbJPBe4Soyfm+LLfCO6UovcBbjYocNDClt0KFLccEp/qduzyR44y4/L04gtS1NZYuGZIT9jpjdZB4JdGrgB4D6CcWNgbC1U90Af7BrYz0WxVAH4x8+llxcuvfOx1/0yFuKToMQZfMgGWBULrSEB8OK/VFRXvlv6wjX8HYJ0jmADoHgE3uEANyP3Vw07/wCkwnTEEE52XA56Tc+P+2dUOKXqEwF0GgmMAtHutEZiAzlhQPJsR7PJF2liABIYfQJORqJl1BtriQfF6RrDdH9klMNLehRnxTDEqo340JPZmtrrhsdU5Wq7t4nX5Aqfzx+SgpwQgNnzHLim8DRB6GHDkD6dbctBzQE9Hd2ROTSSoHWAcBlCccwGMhtShMe/nNLPg8EXaidACoDYPcJ8cFDfNV7R+x943IglKCIAl124ZtCMe9DzKCqwFO6XIHgDdAIpygF+Qg+KJTHkZj8UyaahU4WQ7SG0EaKvJAp7JSXUnBmomcgbbNw/ahESyA8BxEGwmwN1yUj1oBNV0Zju21YTtS6wWP7PqBqjqz1laRX+nV4kJ4Bgzd8ZD1VdNxE6FpFntkqItDNbm6kaTApMg3BaUZEfq34WZXP1dLUWbCNxMQCWD1wC0HsBKADIBMoM+AGqPUlB451v/Bu2wyPrK+58ra+J0wiI4V+eyzlswq38DxxXmH4rnHhcAAAAASUVORK5CYII="/></a></li>
+                </ul>
+            </div>
+
+        </div>
+       
+    </section>
+    <script src="./food-website.js"></script>
+</body>
+</html>

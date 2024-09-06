@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="./logo/logo.png" alt="">
+        <div class="nav">
+           
+            <ul>
+                <div class="close-nav">
+                    <img src="./assets/icons/icon-menu-close.svg" alt="">
+                </div>
+                <li class="select">Home-page</li>
+                <li><a href="./Dishers-Orders.html">Orders</a></li>
+                <li><a href="./About-Us.html">About us</a></li>
+                <li><a href="./Contact-Us.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <button class="sign-in"><a href="./sign-in.html">Sign-in</a></button>
+            <button class="sign-up"><a href="./Sign-up.html">Sign-up</a></button>
+        </div>
+        <div class="nav-alt">
+            <img src="./assets/icons/icon-menu.svg" alt="">
+        </div>
+       
+    </div>
+            <!-- top container -->
+    <div class="container-top">
+        <div class="left" style="background-image: url(./assets/images/hand-drawn-pattern-background_23-2150905255.avif);">
+            <h1>Enjoy the soothing delight of our dishes at a very affordable price</h1>
+            <h2>10% off on every of your order</h2>
+            <button>Order now</button>
+
+
+        </div>
+        <!-- top -right section of the page -->
+        <div class="right" style="background-image: linear-gradient(45deg, white, hsl(47, 77%, 83%));">
+           
+            <ul>
+                <li class="open-cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAr9JREFUSEvtlU1IFGEYx//Pu6kRfRiEBHnrkjejwENgJkLuLOalS0G0O5mdgohCe1dxKXenrIi6RMbOhlAdC3Nn+6AsulQHMyKPHoroUIRlJeXOPDW7joziurNr5cX3NMz7PP/f8/zfL8IiDVokLpbA/835aavVaDICoq5/SP4Bxm49rKRsxv8E27DjcamcmwFu0VJ1lmXVZTomagCwzf5kwkWyeKxoJ0jUArwjI2uJmnhH44sZYLdwSDPqifFw6l+rLpWrxYJDmtFPjCYAX/QT/rV/lpNzgsFMqpZ6B2ADgZ/GZaC2GPDhS0bZ92/4DGAFwDd1Gdjr6OQ8x2rUOA1Cmx2YtszKvo6m94XCVe1uA9h6kMlj7NfDSl9ecMuZgSrLFCNZW6gzLv3dBYNjqfMAH81yUZGQyse8YDtAjRlDADYDGNWlsrFgcNQYAaEKwJAulS3u/HmvTDVmHAFwwbFKCHrrFW6StYYsup3tlrsTMtDpGbzv7L2KkknzAwDhFThnnBDVenvjK89gO/BAzEgyoBQJToM5qocDkdn5eV+nkJbaQ8w3MpYxaT6B+16LmPjJQ9cjyte54vOCg5HB5aJ0wt6NK2efRa8FFAWe2t29AA4CsJjpmE/gpRdo2rLGroUDw0WDg5Fb5aK07DWASi9AV8wTXSrZ+3/WyGu1E692J7dCiB6AbSGveQsHOwUEe5Lrl5lik5fOF2y1GxKKplpBXE6+yct6W/O4ey4YTVb7iHYxaFiX/v75ivNqWUZDjSU1gNqzgjSoS3+9I94aubMuXeobBbBqar55PniB4NQj51FngBNSmb7RQjFjOwGPnUII6IpL5WSurgsC2zYT8ZWMGKNXDyuH3MJqzHgGoAbAuMVcm+soZfzyskncMS2nBqpMX8nqhNz5fK5cu/OSX+ab3kjTp7+2xoUWuQR2O/Abqo3zH3H46W4AAAAASUVORK5CYII="/></a></li>
+                <li class="purse"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAapJREFUSEvtls9Kw0AQxr9JtVXQRxAVPKqPICIImh5Eob3a1r6DNAqtYqInjx7Epgf1YhW8NMVTrQ/RkyCCb2ARKTRr0z+SYNukMBoR95Zldn6zs99uPoJPg3zi4neBY4fFKRJiMkDEUpiom0/Z3fCzvbuOxEm1OG+SuAAwx38EdK6nVjZBJKzcn+DI8dXo+PtYBcAUP7SVkYD1rCLfOsBJrbhhQtxYkwJIB4geuAowhSh18uYUed8BTmiGAkC1Jl9nqkP5aLTOBU5oRrO9EGJP3wlnnGC1kGn0P21N6orMIqpO4X8HHD+4myCpfgJgGUDI9Wi4Wp1QjTIIC67ATgAbWDNqDUEOAyhDiPueBbS1wyaubqLpBmcX1z+41xl/R6v9EVdcM0oELP74dWo9IOYpIJYABF0L4LrHrqB2APsZ84Dtv8VaNZTPRC3hsIy+O44fFdbIpKY7sJ42SZJ6P4EDltPXCMQypREp+FYBaHrAvJ7DBRDJKfK1wwhYH22zdwlg1nM274E5PbW69cXs2ddz21tI4vFsW36xM1gtjvfN2+ztIIs4Yn3b8Qc5MCkud1gjWAAAAABJRU5ErkJggg=="/></a></li>
+                <li><a href="./Dishers-Orders.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA31JREFUSEvNll+IVFUcx7+/M87i4hhBvohIikZBRvSQPvSQqylz5267EbmBtNHMbD5EPuiLO3N9uKBzRwxciAiC+RNapBsVFXNnxWyjlxB8KIXQWNAgiBBTaB9m78zcn5w7Z2V2Zu78a2C9b+fc3+98fv/PIazSR6vExaMLPjA7GwgthJ4OMK3JJMPXQcStomSapvgruGtHlbiyuH3x5pcTE9V20fT1OJayNRBOAngOQFAdsgTGFRBN55LaL3IvbtkvMeMUCDsBDCm5MoDfQCKRS4R/aGVAE/jQJ1eDlbt3TgF8tK3FxDMuU5CA9zt4dnqzM2yY5kilXq4JHLXszwk4qITuMZANEBXkusqsEzAF4PEG2B8gnhEQN+S+67rPEtERBrbV5OhcLqm97QuOpopvEfE5JXDZdYZHPzVHSvUKB87MDodKIZuA3XKfgUvsDI81yk1+cHFdsFyVBr/s6TO/mTP02eWzHnosi2j9QuhPAJsA3BdcfiZjjP/TKozvmfOh0lApK/+tddbGPzZHFlvJHUrNbayQexPAegALuWTkqSZwNG3vIcblmnF0NG9oM4Po8XjaPuYVn5cDfjF3XL/qBX/58FjKPgzCh3ItmJ7PGNq1gYBPzu1k4V5RDk3mDe2zlWCrOA1wWm5WMLThbPKVu4MBF55kQbc9MPG7+YSeWQGOp+wYE7y8Ceb9GUO/NAjwlFV83QV/5cFYjGaNsNchD0P9Trq4RTDfWq7UfDKyfxDgqGXPqw4oI1B+Inds/L8VYLmIWfY3AF6rhYUO5hPaF/8HHrcKkww6q5z5KJ+MHG6qarkxdeLiVjdQ/RXAYwDKRDyWTehz/cDVyP0OwBoAf5MjdmTN8L8twXIzniruZeKims99wePpQpiZvlfQCgnem53Wf653oOUloRS/VUPfIeLxbj2fShX2ubURKy+WsmDWWxWq7+3UYLXDBC2fiPzYLuwN0CXB/Kpfd7R9CMSs4hhqrSDzVGKC7gdvghKFMwntJz9DO75AuoH3Cm1qJz/rFPxrAIFGz/uBdg2WglHLfoOA8/XwgMuBukJaEh3C27GqfT1PFSZAJIeKkJ6r3Mv8O8QUyRqad7t183XMceMhyvMLCi5/9+Sp7wDpxlr1UpGj0AG7Ws4Yne9Gr+9Q1yvG0/YLLmMpn4z83iu0p+Lq5/B2Oj3neFAGrBr4Aernci7vo99KAAAAAElFTkSuQmCC"/></a></li>
+                <li class="user"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAiNJREFUSEvtlj9oFEEUxr83uUQLhdiIiGBEsFKQNGKEYBNkN8TYBCzPNRYKVlrk9iIZCXvXpLI8wt61ihIQcxsLCQHFQlOoELAy/mkkVRBUkuw82XB3xuNml7k7vBSZcud7873345thCR1a1CFf7Bn/N/K7E/XN/LNDG0rcAeh0hEKR+tAtemYKE0PrraLRTnwjN38qBC0BOFJn8k2EXYOz9y59asVca+x45SUQBhsfTgu+a1nVvXQ+6EsBfUmNbAGrpYy1GukaGlem/Rh3UEpsHS9MXP4SaRxvXoJoKskYzPf97LDUGl/Pla8wMBd/EI36rvW03cYXGHiZYDzgu9brSNM21Lfk4oHfPb++AujVmK+nNsKjBTnyMxGvRqANVwX3EwCirjYEY8TP2sHO72k515vat/9sXCOJ4aoWO7ngPAgzYI7ucQjgPRTf9SeH39YbjOeDi4p5MZZAUriawdcWYyml+Nx9bkgQDzDQD+BgpZkfYF4WwKtjm29eSClV7S63ivqat9AvSD1i4GTC5CsMjBVde6UZQv+Ea3z6+QnVFb7bMWHSmWuCN8/MZke/V4URcl2RNlzxz6S2h8e+a4/9DWSZtcpG4YoQE6nlpBEb7TNwuOjaa9uvWM7Q2PHKt0F40JQx4WoxYz+Mao1RO/lgCszbD7jpYsJkMWN7JnW1cDlekAZx2qS4pmUq+VmrZFK7O399TCYw1e5NbEqsaX3HUP8BgqzeH7MAK08AAAAASUVORK5CYII="/></a></li>
+            </ul>
+
+            <div class="free-delivery">
+                <img src="./assets/images/3870890-removebg-preview.png" alt="">
+                <h1>Free delivery anywhere within Lagos</h1>
+            </div>
+            <img src="./assets/images/flat-lay-burger-fries-plate_23-2148238470-removebg-preview.png" alt="">
+            <h1>Get a meal for as low as N1,500</h1>
+        </div>
+
+    </div>
+    <div class="cart" >
+        <div class="icon-close" id="close-cart">
+            <img src="./assets/icons/remove (1).png" alt="">
+        </div>
+       
+        <div class="selected">
+            <h1>Checkout</h1>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAr9JREFUSEvtlU1IFGEYx//Pu6kRfRiEBHnrkjejwENgJkLuLOalS0G0O5mdgohCe1dxKXenrIi6RMbOhlAdC3Nn+6AsulQHMyKPHoroUIRlJeXOPDW7joziurNr5cX3NMz7PP/f8/zfL8IiDVokLpbA/835aavVaDICoq5/SP4Bxm49rKRsxv8E27DjcamcmwFu0VJ1lmXVZTomagCwzf5kwkWyeKxoJ0jUArwjI2uJmnhH44sZYLdwSDPqifFw6l+rLpWrxYJDmtFPjCYAX/QT/rV/lpNzgsFMqpZ6B2ADgZ/GZaC2GPDhS0bZ92/4DGAFwDd1Gdjr6OQ8x2rUOA1Cmx2YtszKvo6m94XCVe1uA9h6kMlj7NfDSl9ecMuZgSrLFCNZW6gzLv3dBYNjqfMAH81yUZGQyse8YDtAjRlDADYDGNWlsrFgcNQYAaEKwJAulS3u/HmvTDVmHAFwwbFKCHrrFW6StYYsup3tlrsTMtDpGbzv7L2KkknzAwDhFThnnBDVenvjK89gO/BAzEgyoBQJToM5qocDkdn5eV+nkJbaQ8w3MpYxaT6B+16LmPjJQ9cjyte54vOCg5HB5aJ0wt6NK2efRa8FFAWe2t29AA4CsJjpmE/gpRdo2rLGroUDw0WDg5Fb5aK07DWASi9AV8wTXSrZ+3/WyGu1E692J7dCiB6AbSGveQsHOwUEe5Lrl5lik5fOF2y1GxKKplpBXE6+yct6W/O4ey4YTVb7iHYxaFiX/v75ivNqWUZDjSU1gNqzgjSoS3+9I94aubMuXeobBbBqar55PniB4NQj51FngBNSmb7RQjFjOwGPnUII6IpL5WSurgsC2zYT8ZWMGKNXDyuH3MJqzHgGoAbAuMVcm+soZfzyskncMS2nBqpMX8nqhNz5fK5cu/OSX+ab3kjTp7+2xoUWuQR2O/Abqo3zH3H46W4AAAAASUVORK5CYII="/>
+                <h2>cart</h2>
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="selected">
+            <h2>Dishables food website</h2>
+            <button>+ Add another pack</button>
+        </div>
+        <div class="order-select">
+            <div>
+                <h3>pack 1</h3>
+                <img src="./assets/icons/delete.png" alt="">
+                
+            </div>
+            <div>
+                <p>Lorem, ipsum.</p>
+                <div>
+                    <p>-</p>
+                    <p>1</p>
+                    <p>+</p>
+                </div>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div>
+                    <p>-</p>
+                    <p>1</p>
+                    <p>+</p>
+                </div>
+            </div>
+            <div>
+                <p>Lorem, ipsum dolor.</p>
+                <div>
+                    <p>-</p>
+                    <p>1</p>
+                    <p>+</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="payment">
+            <div>
+                <h3>Payment method</h3>
+                <p>choose</p>
+            </div>
+            <div>
+                <h3>Payment method</h3>
+                <p>choose</p>
+            </div> 
+            <div>
+                <h3>Payment method</h3>
+                <p>choose</p>
+            </div> 
+            <div>
+                <h3>Payment method</h3>
+                <p>add</p>
+            </div>
+            <div>
+                <h3>Payment method</h3>
+                <p>add</p>
+            </div>
+        </div> 
+        <hr>
+        <div class="checkout">
+            <div>
+                <p>Sub total</p>
+                <p>N70,400</p>
+            </div>
+            <div>
+                <p>Delivery fee</p>
+                <p>N0</p>
+            </div>
+            <div>
+                <p>Service fee</p>
+                <p>N0</p>
+            </div>
+            <div>
+                <p>Total</p>
+                <p>N0</p>
+            </div>
+        </div>    
+        <button class="place">Place Orders</button>   
+        <button class="clear">Clear orders</button>
+
+        <div class="bookmark">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAdVJREFUSEvtl8FLFHEUxz9vdFEQNXJH6CAZzO5YQkRJN6/9CV08dQkvFYEsIkgbQkQERZ3q4slL/0Fnb2IogbWzO5BCEDirmIugrM6LWWdl23ZlnRYMmt/lB8N77/Pe9/d7v/n9hHMack5cmoKtQvImvtwB6Y6WnO5j8NFNeSuN/BuCUznzkQqvowF/9xLRyUK6+K4+VkOw5ZibgNkOMPDdtb2hVsF6bChPXXszGyUByxnMgj4JfF3b+6PAZhXH4DOrHUsd7+q4nSp7wHLM+AD5zw+QtDMw4mO8CmQw8B/n7a1cvSRtPTJH1/ouHnR2zQH3gc4Qdgi87zo8mF0b3d2uJtAW8K1lEj97kw9AZoELYfBSOPeG8w7oXH+p+PbTGOW/BGtWMT4L+iLoshDgA/PaYcxUrgpH/jPgXkX14+EqkhH86yCVS0SEiwC7QF9VPoVFQ3hYSHurtWuayps3fOWNwHjN9xPfKOAwjm6gknFHvA+n9ZWVM+8igTpyudYuCnhPhOflRM/L9Svr+6008/C34e5EeW9KlWmg56xS+6ALiSMyX68Vf7QCrLe5+iV5qdxBUP2Ea3vV9T8xa/h3SjsDt/P21lIUYL1Ps1j/3hOmHdWeFuMXJi8uLq0XxBkAAAAASUVORK5CYII="/>
+            <p>Save for later</p>
+        </div>
+    </div>
+
+    <div class="wallet">
+        <div class="icon-close" id="close-wallet">
+            <img src="./assets/icons/remove (1).png" alt="">
+        </div>
+        <div class="balance">
+            <h2>Balance</h2>
+            <h1>$20</h1>
+        </div>
+        <div class="add-card">
+            <img src="./assets/images/blank-canvas-exploring-potential-empty-credit-card-debit-card_1114736-5617-removebg-preview.png" alt="">
+            <button><a href="./add-card.html">Add card</a></button>
+        </div>
+        <!-- or
+        <div>
+            <h2>Other payment platform</h2>
+            <div>
+                <div>Inter switch</div>
+                <div>airtel smartcash</div>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="favourites"></div>
+    <div class="profile">
+        <div class="icon-close" id="close-profile">
+            <img src="./assets/icons/icon-menu-close.svg" alt="">
+        </div>
+        <img src="./assets/images/user-circles-set_78370-4704.jpg" alt="">
+        <h1>Ayoade Adekunle</h1>
+
+        <div class="remaining">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAapJREFUSEvtls9Kw0AQxr9JtVXQRxAVPKqPICIImh5Eob3a1r6DNAqtYqInjx7Epgf1YhW8NMVTrQ/RkyCCb2ARKTRr0z+SYNukMBoR95Zldn6zs99uPoJPg3zi4neBY4fFKRJiMkDEUpiom0/Z3fCzvbuOxEm1OG+SuAAwx38EdK6nVjZBJKzcn+DI8dXo+PtYBcAUP7SVkYD1rCLfOsBJrbhhQtxYkwJIB4geuAowhSh18uYUed8BTmiGAkC1Jl9nqkP5aLTOBU5oRrO9EGJP3wlnnGC1kGn0P21N6orMIqpO4X8HHD+4myCpfgJgGUDI9Wi4Wp1QjTIIC67ATgAbWDNqDUEOAyhDiPueBbS1wyaubqLpBmcX1z+41xl/R6v9EVdcM0oELP74dWo9IOYpIJYABF0L4LrHrqB2APsZ84Dtv8VaNZTPRC3hsIy+O44fFdbIpKY7sJ42SZJ6P4EDltPXCMQypREp+FYBaHrAvJ7DBRDJKfK1wwhYH22zdwlg1nM274E5PbW69cXs2ddz21tI4vFsW36xM1gtjvfN2+ztIIs4Yn3b8Qc5MCkud1gjWAAAAABJRU5ErkJggg=="/>
+            <p>N0.00</p>
+        </div>
+        <h3><a href="./Dishers-Orders.html">My Orders</a></h3>
+        <hr>
+        <div class="logout">
+            <h3>Logout</h3>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAdlJREFUSEvtls0uA1EUx//narH0kUjE0tJHJDYqaTuVYoWX6EZs9DUkYsVC7Cw9gFAT00pGJ9IEC08gRHTBjum4RwZNbms0V6dRCbO8c+7/dz7uufcQ2vRRm7j4XeBjw+gRbue4kFKEyYgUQspO9zJlWQ/1Op8iLkylswDWAETCQJW9FWJejTvmlqpXA7ZjM0Mei+sWAVUZfql4A6mSVa4u1oDz03MJkjL/9pOQJcZ5GCeYMAHGhq/BQiST9mEhEHwylTYYOH7nIhUvHllhwI30aiL+B3+V6nxsZlrIjuG4k9ttVArtVPv9G3mKTPhiXrd3HtR//r+qIBO2ZZe3krIsL8gBbbDuQVIFGShSNLqYONm/r9+vDVYjbuSE2iYfrXcriZcM2zxT92mDVUPd6BU7l5gyat1/CuwBtJwo5naqzmiDm041UJaCFw3bPG0q1brprS0Jl1CJLCRKB7ctOVw67QTCbv9jb2bkas8N1U66V+b7BUKjccfcbskFogtupiT1j84ffyTaNggUJucHEX250a3hN+zYZR5MO+Zd4ATiLxZi6VUw1gGEmjAVpyrMlE06uU3V0cC52o7N93mQY8Qcau72x1v3WV7Mlo4e67MTSvgbqf5k+vfAr0rPTC6SyWDBAAAAAElFTkSuQmCC"/>
+
+        </div>
+       
+        
+    </div>
+    <section class="exhibition">
+        <h1 class="titles">Categories</h1>
+
+        <div class="all-categories">
+            <div class="category">
+                <img src="./assets/images/healthy-salad-with-chicken-vegetables_144627-14729.jpg" alt="">
+                <p>Salad</p>
+            </div>
+            <div class="category">
+                <img src="./assets/images/side-view-shawarma-with-fried-potatoes-board-cookware_176474-3215.avif" alt="">
+                <p>Snack</p>
+            </div>
+            <div class="category">
+                <img src="./assets/images/stir-fried-crab-with-curry-powder-beautiful-side-dishes_1150-24292.avif" alt="">
+                <p>local dish</p>
+            </div>
+            <div class="category">
+                <img src="./assets/images/top-view-delicious-pasta-plate_23-2150690621.avif" alt="">
+                <p>Italian</p>
+            </div>
+            <div class="category">
+                <img src="./assets/images/noodles-with-pork-pork-balls-chilli-paste-with-soup-thai-style-vegetable-boat-noodles-selective-focus_1150-45665.avif" alt="">
+                <p>Chinese</p>
+            </div>
+            <div class="category">
+                <img src="./assets/images/indian-delicious-roti-assortment_23-2149073331.avif" alt="">
+                <p>Indian</p>
+            </div>
+            <div class="category">
+                <img src="./assets/images/strawberry-milkshake-black-background_1268-25081.avif" alt="">
+                <p>Smootie</p>
+            </div>
+            <div class="category">
+                <img src="./assets/images/chicken-grill-with-vegetables-table_140725-9460.avif" alt="">
+                <p>Grills</p>
+            </div>
+
+        </div>
+
+        <h1 class="titles">Top Offers</h1>
+
+        <div class="top-offers">
+            <div class="offer">
+                <img src="./assets/images/caesar-salad_74190-5603.avif" alt="">
+                <p>food</p>
+                <p>.category</p>
+                <p>Nxxx</p>
+                <p>save N500 on potato cost. Offer expires in 2 days</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="offer">
+                <img src="./assets/images/baked-chicken-wings-asian-style-tomatoes-sauce-plate_2829-10657.avif" alt="">
+                <p>food</p>
+                <p>.category</p>
+                <p>Nxxx</p>
+                <p>save N500 on potato cost. Offer expires in 2 days</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="offer">
+                <img src="./assets/images/crispy-french-fries-with-ketchup-mayonnaise_1150-26588.avif" alt="">
+                <p>food</p>
+                <p>.category</p>
+                <p>Nxxx</p>
+                <p>save N500 on potato cost. Offer expires in 2 days</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="offer">
+                <img src="./assets/images/azerbaijani-lyulya-kebab-with-potatoes-vegetables_140725-908.avif" alt="">
+                <p>food</p>
+                <p>.category</p>
+                <p>Nxxx</p>
+                <p>save N500 on potato cost.Offer expires in 2 days</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="offer">
+                <img src="./assets/images/flat-lay-burger-fries-plate_23-2148238470.jpg" alt="">
+                <p>food</p>
+                <p>.category</p>
+                <p>Nxxx</p>
+                <p>save N500 on potato cost.Offer expires in 2 days</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="offer">
+                <img src="./assets/images/close-up-chicken-mandi-rice-dish_1106454-146622.jpg" alt="">
+                <p>food</p>
+                <p>.category</p>
+                <p>Nxxx</p>
+                <p>save N500 on potato cost. Offer expires in 2 days</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="offer">
+                <img src="./assets/images/caesar-salad_74190-5603.avif" alt="">
+                <p>food</p>
+                <p>.category</p>
+                <p>Nxxx</p>
+                <p>save N500 on potato cost. Offer expires in 2 days</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="offer">
+                <img src="./assets/images/caesar-salad_74190-5603.avif" alt="">
+                <p>food</p>
+                <p>.category</p>
+                <p>Nxxx</p>
+                <p>save N500 on potato cost. Offer expires in 2 days</p>
+                <button>Add to cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="flex">
+        <ul>
+            <li><img src="./logo/logo.png" alt=""></li>
+            <li>Dishables: well recognised for its track record of satisfying costomers craving</li>
+        </ul>
+
+        <ul>
+            <li>Quick links</li>
+            <li><a href="./About-Us.html">About us</a></li>
+            <li><a href="./Contact-Us.html">FAQ's</a></li>
+            <li><a href="./Contact-Us.html">Contact us</a></li>
+        </ul>
+
+        <ul>
+            <li>Legal</li>
+            <li><a href="Terms and Condition">Terms and Condition</a></li>
+            <li><a href="Privacy Policy">Privacy Policy</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="./Contact-Us.html">Contact us</a></li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA+tJREFUSEvFll2IG1UUx//nTmZp60fBh6X49VS1qyDSFSlWdKG2D7UPfm2VWkofSt2dbCtp87GZSWVkd/IxaZulyaRWwQdXQbeo4IvoQ6m0D1prRQqtiwVREERU/FgaTDpzdKYJTpLJJk2Fnbe593/+v7n3nHvuEJbooSXi4rrBRmJiGzFLDuH7FdWBL/YVCpVeFnP94Hj4NID1dZgD0BlmzKTypXcX+4CO4HQsrDIhAnBJM8uvdDIxmsF+2WmS8KSasX4Nim0D6/rOZQOXV7zJoNH/AvhlzSxPBRkcjkSWLwzUVoeY1zLjGRCeACDq2nmu2RtShVd/bI1tAuej0RuqonICwENtQuIxNVc+1i1/mUlltc3CIuZNde3FWlV+WJ+Z+d0f2wROxybWM7Gbs6CHmem5VL503D9pxJSdBLrdJuf4AfPovDvHAGXi4YMM7PO0hA+0nPV0R/B0IvwoMT5dZFW2YN6czJc/aWiM+MRJgB+rv38shKMls0e/dN+NRPh9MJ7y5hjDWt4614hrWrERHb8fQnzdZTsrJNFaNVP6xjNvBnsIhliXMotnpiNjt5EsffevTGZgNmVaOwLB2cTulTbLTbkIrEiimJorHXTn3OKqhKpDIIwD2FXXn9NMa9j7sJgyC6LtAH5RTWuQvEy4u9/yGPHwDwDu6LRqBn91pSKN6MXin22xCWUGTC95xra4Tz1UvOA2GDC/7Y5JJB6YzBW9HQ0Cuwd/awfw2VpV3thaoQ3tVFwZEqALdeMdqmnNppMTa9jmi1dzQFsbxdkGno4rLxDorTYw4fMQVzYmzDf+6rQb3rbLtY+uVjKXtZw15x9jhtURXM/zzwAG/ACHpbsP5I9826Xwep4ObJlGPOw2it1+FybsT+Wswz07dxEGgtP799zLknPe1/pcmz9k5jXxfPmnIE89OjYYEtI2STinGud4MXbHS8LwVajv7J2v1gZG9ELhN7+pHoncIstVt+MNAbBB2K7lrHf6Auu6cqN8mdwWeGuLwbwQvCWZLV9yx+v9/SSAB5t0jBe1vPVaJ/ii93FmcnzYccQpAMtbDBwwXheSnbU5dMx3ITTJiDip5srZIHjXH4F0LLyFCR8GnfleCo1AJdUs7WnVdgW7AUYi/DwYswBCvcACNIc004r6x3sCuwGZmLLJIZoDsLIP+IJqWjc3+rTXX67FxIwpq64QjjT/nfTiQCnNLBl9rdgfNJ1QHiEWeYDXdcUS3tNy1rN95biT+VRs712SsB93GJsJ2NBe/fTZTRUa2Vss/v2/gv1mc6Oj0qU7V91jyzzYGLeXOWd1vbzQ13HqupV9Cq6puPpkBIYtGfgfK4VwLrYUTo4AAAAASUVORK5CYII="/> 08135782005</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAnNJREFUSEvtlstrE1EUxr8zTSLoQkGyEPHxD4i4keLGje58gAgi1IUuqunEEinJNDOhudVMnoVKk2nFhSAWRBDBx04X7iy4cCEuRRHERXWhoMXmcdo7mbSJpE2ajM2md3cf5/ud+91zZy6hR416xMUWeNOcb7A6qQ1dZaZRAAddzuAzGLeMnHWvprsCToYDx5mU1y4DG+QUhY9G09Nv5WAdWNWZYFZX0ri7CXDcViWO6pnpdAPYjAQFUF0AoktGpjDrBtzUggNgflDbkJEtiLXBcoYxU9zhDwkhFjtJQAjh8/6evw1CYDWexluDbTa/Q7FyOjZ55+tG4Ikb1/bCqzwn0JHGuFZg5lkQDThBPwBcNLLWy3bgZkQ9CeAhgN32+gatpuCh+HKt2f4bWYsSEXWYgAkAXgAVYsSjOcskaUSTxgClwqrBBFmYyrJMEUwjRq6QNyOqE9MGWGonIoF+gvIMgN+pylcKSudHM3d/1rPT2uDOCjyPmemEU0TfGOVzsezMnOy3AK9WtdxxTdjUB/eg5HsCcL8z9qVMdGosU3gv+ze14KE+5hcA9jvQOeqjM3oqP7+isf6Om4NlsBDC4/vzfZLBQUfsL4iuOGcov0bbnCsytbjdPyKEKNU70tGO6wUS4eAFIr5fA9XNLTDT5Viu8KjZ+XcNlqJp7frhMleeAjjgQD6WCWfHMtaHtareFbBtfSi0y+MrTslqLy0owyKf/7XeVXMN3M59dvWMNwrsuqo7BbYFTob//28RgG5krZRz9ap5bcZDgCo4pk9YbxrANlxTA8yIAtjXrb3/xH8CI9H06eMyqKXc1ru6pUVuLeiZ1UvcSjIug0L1KwAAAABJRU5ErkJggg=="/> adekunzy10@gmail.com</li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAkpJREFUSEvt1j9oE3EUB/DvuyYqBVEEFRxUUMFBcJEOIlRwcRBxsHVRWiyIJleckjR3Lf7EXtK7TNLcFUXFog62giAOLoIFcRAHBxdRQR0ELYgihGqTe5rmj/l/fxIpQm/83Xvv87vf/X7vjrBMFy2TC9+wFpNPMts8alh3/EzeF5xHwXxrCSQ6perp215xz3AyEjpsEz0E0FXEchLzkXjKeuQF9wSPR4d7CPYcgDU1yAJD6h01Jp+7xV3DlyLDOySyXwBY36T4N5ulfWOpyXducFewppzfjGw2/zRbHYp+RCDQoyYuf3bCHWE9enptFt3PAN7jVKxwn14FkNkfM278aBXfEhZCrApm5h8DOOAOLUc9XezeeEgI8atZXlNYCCEFM/P3ARz1iJbCHyiGeYwAbpTfFB6Phq4RaMgnWkhjmGrKlF3DiUhYYYLWFvo3WVENM1lbq+6Jq7pSh+RG3a0KbtCVOkXXdbcynIjLuznHLwGs7pRWU+enDXvvmDH1eunQlW4mYuFzzLD+EVo44cRnFd26UgXP9PV1vdm+aQhEW4pbchDAtjYn8gGgm4Udzp92vf9yvX92NlcF1wJaVH4CcG97MM2pRvqg6+OUD1yBS8vFwDRLxfdWHCSbBwkYqF/Sji41XVSNtKhEtKgs/uyeCysw8H8tdfgugP66rwohpOjmVOV4i643oxrmCU/nODkS2smM48xS+Y+SwV8DtDg9ol/9XllsInZmXZaDAwTaUBonsheIcC8+Yb31BLfXsZyzHX/2nEv4i/gNXeP4H1vtOJ4AAAAASUVORK5CYII="/> 5, Oni Crescent, Unity-Estate, Iju Ishaga, Lagos state</li>
+        </ul>
+       
+    </div>
+        <hr>
+        <div class="buttom">
+            <div class="copyright">
+                <p> Copyright 2024 made with Ayoade Adekunle</p>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://www.facebook.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA4RJREFUSEvFll1oFFcUx/9ndjVBom1E2IgPJrTSGEUzSQoS3MmQB/XRVtI+tEKLD6LNOoko0r6YJ1usX7MxD30ogtASElsoVcyDKekkodo02VHpilisHxANKkmwH4ns3KOzzZad3ZnM7OYh92nm3nP+v3PmnjvnEhZp0CJxURC4paUndOfxxBYQVwK8ei7ocbB0f11F5Gpv73tW0EQCgWsVfR0YnxLhHQCve4hPgvBd2BKfjwy13/ULYF5wff1Xy8SymS9A2A8g5Cc2t54CcGL26eTRZLLjhZePJ1huPrsWlrgE5g0BgblmI7CknYnh2Libvyu4Tjm9niENAVhZJDTjNo5wqDHxU+v9XJ088NtqV0XKSl0FYW0A6ASYDAb/KRH+FUCYgF0AqrN8k9LS0sbRK3uns/XywLIS7wb4fV8ooZtJ7DMH2qeybeUmPQZGPHuOgS7T0Fo9wfVqZ7UQ4pYvFEi+GVm9ye341Cq6RsCZHI0XEovK0cH2R5l5R8ZyVD8Pwm4/MIF2jRkHvs+2q1VPVwKoJEt6F4RYrgYzjpuD2pE8cE1Nx9KSVeVPAKzwA1sWV98YbrudsZMV/QL+21vPwcBd09DeyAPXKZ3NDNHvB7XX/7FmVtwePvLcfp4LeDaIX3bA/3/q2mj8IyI+F0RgVgovTw588lcarHaVlYhUOgi/wYyd5qD2g22XDT5MxMf9nO31osFAm2louhOs6IcI+NIDfC9haFVBgpKj8R4Qt7jb8qGE0XbSAZab9N1gnF8ouE7RbzKw0U2HgQ9MQ/vWAa5T41tY8C8eDo6K9Mrcbpt/TDz6G0CJmw0JNIwNaaMOsKp2hKdF+eSrzlLm4jRFQHpv7DHzdPJYpvPYVV26qvwze54Zy0E46BHYVMI4sBIgdoDtlyDnsdjiIuCbMUP7MBOU88+ldjZAiBG/IiqmqoVlbbw+fPB3V3A666h+GYQd88ELBhMuJH7WHJXu3hZFKgmg3AteIPgxS2J9bhdzvQjI0XgTiPsAlLrBg4IJeM6S1JwYiP2Wq+N59alXz2wVAhcBei3XKSD4CUtimznQbroerfn2cnPzqTVSKtQDoDHbLgD4xyVLQh//2t/6zEs/wPWWSVb0KCDtAXg7gIg7mB4So49YfD061HbN72QEADslNimdVW9FIg8yt4/032p8IuJ1m1xAxn6xF7decMbFYfK9XgJG0YIuUceEtwAAAABJRU5ErkJggg=="/></a></li>
+                    <li><a href="https://www.instagram.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGdJREFUSEvNll1sFFUUx//ndrtNQBJgZ7GUYncWaHcGsVLqC02xUd+oKSEmmhhRSfDBt1ajCVFiJUQTJfbFxAexiokJD4hByosmRCTBSD8IsDtbLDNtLDWys63BQiLt3mNvYXF2d3a39aVMMk/33PM759zzRViij5aIiwcbnKjT1rKgjYK5olSEJFGGJI+YY+4f5SJZ1ON4JFxNxB8RsBPAqnKK8s6nGOiDxFvFjPAFJ6LaTmIcA7D8nsJbDAwRkCltAAUBbgJQdU9umomeN+3U6fx7BeD+mpply6vuXANQDeZeQfis3kkPlIfeVX2mDYG1jtYKgW4GWgFM3PonuKl5YuK2F14AtqJaNxgHCDgWc9wXFhliDOuhlwBQg5M+aunaGQBtIHQbtvteOfA4GOtmIaq3ODf+XAxYQSXo6PwdplcF0ZCEvAjCdcN2a4uCVUIJYpWRScNxDT/ocG1oXSaIDmLazgCD+DwydEIl0bAe2iNBX6l7RLQ3Zqd6LV37G8BDojIYbrg64WZ15oQ6Uac1kcAAA+dMx1Xvk/NZEe01ED4GsCLv6CYRdcbs1BdWJPwKCdAs5JVH7fQFS9dUvkRZZLaY16au+ILjerhVgM8C6DMct92rfM7yN+YsV9CbIPSQ5EGQqAT4MQY6lVfM6DRH3Z7ce6FLAG2BlNuNscnz/h5HQ88Q0w8gOmHYqd1ZoXhdeKsQfAGAK2Z4W8N4+rpXeTy66hHBgUGAV8gK2bR5ZDKePbd07SKARkHU2mCnzpUGg48bTvq5rFBS195n4F0mdJm2+4nf2yciobeJ6EMCvRNzUoc84EEAWyVox2Yn9bN/qKOhpwXTj/keW7r2PYB2JrSbttvnB7aiod1gOo48o62oNgBGExhtxqj7ky/Yimiq5lTtnTIc99msUELXviOgQ/0xxz25KLCuqSdqJomnYmOu0j3/5WS1B3zScNyO++GKaAdUEwDwpuG4h33Beng/wIdAvN+w0x947vaDsI1BT5pOSiVuSXCOx5c3rF4fkCIJ4LaY4cfzkyuhr6wjBIYABFiiwTsYFpRcyQ1rWlhKlXkF5ZSIhl4npk/nvJ5mcI9g9INEUEI2EkiV0zIG9pmO+3lOOUW1OBgmEZ6I2W6/f3LdLZvBog1E1/bNNQ8V6oIGwqAu00kdyX+GbAMhiMaYc+OSL/i3jatrZzPidwBjhuNG/N5yvmVWYtdcvbcwqTHJv0DSt35zlwGR1DU1laoCFXL9ppHJcV8wAxVJXftrvgtJ1Cxkk/Az7n79R7VmZqisno457krvaC0Yi4lI6Ihq8GB8Y4y6L5ZSXO4sqWtn52cyc68xmt7rlS8AD9fXaHLmzlW17hDjtIQ8aIxO/kqALAdS59lFgAUOAmgBMCUqg/XeyVRQx//VXuhlEH3pAf3f1QcM3mM66a/zjS667CX08A6AuwhQHUwsxFuPjIrOKQYd9jaNkqHOB1zW1zwcYOm7FBQzZpaEVW57ebAX+kWGeUHiS+bxv6pa3C6kTLPRAAAAAElFTkSuQmCC"/></a></li>
+                    <li><a href="https://www.linkedin.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhtJREFUSEvt1s9r1EAUB/Dvi1GqoNS6S0EQqrK4ybpZf4B6qKUKnjx6EwTBQ0URelAURBQPInrQg6h/gOBNL15ERbE3wbKZJZtFV71YL8nWqotEtslrU6nMbG0Vm1ChnVveS+aTN3mThLBAgxbIxf8FZ4vuUSbKAtEzX5jDaazKjIozVm0I4N5pjImONOz8vaRxBc6U3AEw7qoIub7Im+nClntxErjUhjR9YaxOFc5azl6G9rINue8L43CqcDx5puQcB2vnAKwH80MK+ZhXLTRTh5MGZpsv0X28puB0LV+GHGPFyKjIfZyrCAXutmobQ/B7+QIC3fZE/uTUY7Dc0wCuy/lxLVirRyv7AI4bc4eU+8bA41YYDXx1CqPtNzFvmECDDL45a3WEeitq7fpSsT6rBUlH/1IxgABAxx+W9bwnjCtJw/F8EYB3AD4B6ANmfAOGfWHsTBoOwOj1K8brqT7Y5vYjwhMAugRFnd/1VfV67sd0bP7PmHDLs41TcjWZovsIhINKhWGU85xCPTGYCYcatvFAga3aDYAH5RiTtrthb3mVHMx8oFExnypwqXoBTJeVhtOwzy8bL34PF99sCimMm0QafMcX5omf+7h2BuBrSppov2/nn8uxdcXqWSK6ugQvLfWvHuhedM3V0/Oho9kZ7FHfqTzilc23caxra2WDpuub5fw4gvJYefuYHPub8xL9EZjrC9WeW3zwBLX/Yy4rXp6TAAAAAElFTkSuQmCC"/></a></li>
+                    <li><a href="https://www.x.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAs5JREFUSEvtlk1IFGEYx//P7JoltuV+qFRbWoQ7ujt70AjsAzWKEDpEEh2EJOgQWAQGHaQOHQqCiIqka5eyLzxFdOnzIJEedrd1tzSiqCx31pBiM92Zp8ZUdm3cmd2FvDgwzOF9nv/vef7zzvMOYYEuWiAuFsH/zfm8rS6pfbvCMjnRxUA9AW4A40x8sdCaOPe5vy6hdVLqDZVpz5FXvq8znaWBV9X2FU1MFl+T7cOH8KQxadS+w/96NbH6HEClTuwnADcBeJlgiwfELakxaeBSKbJPBe4Soyfm+LLfCO6UovcBbjYocNDClt0KFLccEp/qduzyR44y4/L04gtS1NZYuGZIT9jpjdZB4JdGrgB4D6CcWNgbC1U90Af7BrYz0WxVAH4x8+llxcuvfOx1/0yFuKToMQZfMgGWBULrSEB8OK/VFRXvlv6wjX8HYJ0jmADoHgE3uEANyP3Vw07/wCkwnTEEE52XA56Tc+P+2dUOKXqEwF0GgmMAtHutEZiAzlhQPJsR7PJF2liABIYfQJORqJl1BtriQfF6RrDdH9klMNLehRnxTDEqo340JPZmtrrhsdU5Wq7t4nX5Aqfzx+SgpwQgNnzHLim8DRB6GHDkD6dbctBzQE9Hd2ROTSSoHWAcBlCccwGMhtShMe/nNLPg8EXaidACoDYPcJ8cFDfNV7R+x943IglKCIAl124ZtCMe9DzKCqwFO6XIHgDdAIpygF+Qg+KJTHkZj8UyaahU4WQ7SG0EaKvJAp7JSXUnBmomcgbbNw/ahESyA8BxEGwmwN1yUj1oBNV0Zju21YTtS6wWP7PqBqjqz1laRX+nV4kJ4Bgzd8ZD1VdNxE6FpFntkqItDNbm6kaTApMg3BaUZEfq34WZXP1dLUWbCNxMQCWD1wC0HsBKADIBMoM+AGqPUlB451v/Bu2wyPrK+58ra+J0wiI4V+eyzlswq38DxxXmH4rnHhcAAAAASUVORK5CYII="/></a></li>
+                </ul>
+            </div>
+
+        </div>
+       
+    </section>
+    
+
+    
+             
+    
+    <script src="./food-website.js"></script>
+    
+</body>
+</html>
